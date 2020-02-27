@@ -1,11 +1,11 @@
-# Very short description of the package
+# Laravel Cache Cleaner
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/rakshitbharat/cleanify.svg?style=flat-square)](https://packagist.org/packages/rakshitbharat/cleanify)
 [![Build Status](https://img.shields.io/travis/rakshitbharat/cleanify/master.svg?style=flat-square)](https://travis-ci.org/rakshitbharat/cleanify)
 [![Quality Score](https://img.shields.io/scrutinizer/g/rakshitbharat/cleanify.svg?style=flat-square)](https://scrutinizer-ci.com/g/rakshitbharat/cleanify)
 [![Total Downloads](https://img.shields.io/packagist/dt/rakshitbharat/cleanify.svg?style=flat-square)](https://packagist.org/packages/rakshitbharat/cleanify)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+Clean all type of cache which are related to Laravel right from route or console command.
 
 ## Installation
 
@@ -18,13 +18,8 @@ composer require rakshitbharat/cleanify
 ## Usage
 
 ``` php
-// Usage description here
-```
-
-### Testing
-
-``` bash
-composer test
+// Just run below command at root of your folder to clear all possible cache
+php artisan cleanify:cleanify
 ```
 
 ### Changelog
@@ -47,7 +42,3 @@ If you discover any security related issues, please email rakshitbharatproject@g
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
-
-## Laravel Package Boilerplate
-
-This package was generated using the [Laravel Package Boilerplate](https://laravelpackageboilerplate.com).
