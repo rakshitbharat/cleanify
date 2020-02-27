@@ -1,0 +1,54 @@
+{
+    "name": "rakshitbharat/cleanify",
+    "description": "Clean all type of cache which are related to Laravel right from route or console command.",
+    "keywords": [
+        "rakshitbharat",
+        "cleanify"
+    ],
+    "homepage": "https://github.com/rakshitbharat/cleanify",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Rakshit Patel",
+            "email": "rakshitbharatproject@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "^6.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rakshitbharat\\Cleanify\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rakshitbharat\\Cleanify\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rakshitbharat\\Cleanify\\CleanifyServiceProvider"
+            ],
+            "aliases": {
+                "Cleanify": "Rakshitbharat\\Cleanify\\CleanifyFacade"
+            }
+        }
+    }
+}
