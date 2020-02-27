@@ -18,6 +18,10 @@
     "require": {
         "php": "^7"
     },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
     "autoload": {
         "psr-4": {
             "Rakshitbharat\\Cleanify\\": "src"
@@ -27,6 +31,11 @@
         "psr-4": {
             "Rakshitbharat\\Cleanify\\Tests\\": "tests"
         }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
     },
     "config": {
         "sort-packages": true
