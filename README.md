@@ -16,9 +16,9 @@ composer require rakshitbharat/cleanify
 ```
 
 ## Usage
+Just run below command at root of your folder to clear all possible cache
 
 ``` php
-// Just run below command at root of your folder to clear all possible cache
 php artisan cleanify:cleanify
 ```
 
