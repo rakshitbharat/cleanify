@@ -15,9 +15,6 @@
             "role": "Developer"
         }
     ],
-    "require": {
-        "php": "^7"
-    },
     "autoload": {
         "psr-4": {
             "Rakshitbharat\\Cleanify\\": "src"
